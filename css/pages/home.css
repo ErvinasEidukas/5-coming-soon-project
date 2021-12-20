@@ -14,3 +14,85 @@
 @import '../components/progres-bar.css';
 
 /* custom style below this comment, for this page */
+
+/* HERO: start */
+.hero{
+    padding-bottom: 30px;
+    background-image: url(../../image/banner-1.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero > .row-short{
+    text-align: center;
+}
+
+.logo{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 45px;
+    object-fit: contain;
+}
+
+.main-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.main-description{
+    font-size: 18px;
+    color: grey;
+    margin-bottom: 30px;
+}
+
+/* WHY ? */
+.hero .clock{
+    margin-bottom: 30px;
+}
+
+.hero .form{
+    margin-bottom: 15px;
+}
+
+.hero .mouse{
+}
+
+/* HERO: end */
+
+/* MAIN CONTENT: start  */
+.column > *{
+    margin-bottom: 20px;
+}
+
+.column > *:last-child{
+    margin-bottom: 0;
+}
+
+.content-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.content-description{
+    font-size: 17px;
+    color: grey;
+}
+
+.content-description > .link{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.content-description > .link:hover{
+    text-decoration: underline;
+}
+
+.progres-bar{
+}
+/* MAIN CONTENT: end  */
+
+/* FOOTER: start */
+/* FOOTER: end */
