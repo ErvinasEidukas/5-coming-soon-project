@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/pages/home.css">
 </head>
+
 <body>
     <!-- 1 -->
     <section class="container bg-primary hero">
@@ -45,7 +47,11 @@
                 </div>
             </div>
             <form class="form">
-                Form
+                <form class="form">
+                    <label for="email">Email</label>
+                    <input id="email" class="input" type="email" placeholder="Email" required autocomplete="email">
+                    <button type="submit" class="btn">Sent message</button>
+                </form>
             </form>
             <div class="mouse">
                 Mouse
@@ -90,7 +96,13 @@
                 <h2 class="content-title">Have any questions?</h2>
                 <p class="content-description">Lorem ipsum dolor sit amet <a class="link" href="mailto:vardenis@pastas.xyz">vardenis@pastas.xyz</a> adipisicing elit. Distinctio dolorum facere nam ipsum quasi. Quia aperiam nobis repudiandae qui reprehenderit.</p>
                 <form class="form">
-                    Message form
+                    <label for="name">Name</label>
+                    <input id="name" class="input" type="text" placeholder="Name" required autocomplete="name">
+                    <label for="email">Email</label>
+                    <input id="email" class="input" type="email" placeholder="Email" required autocomplete="email">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" class="input" placeholder="Message" required autocomplete="off"></textarea>
+                    <button type="submit" class="btn">Sent message</button>
                 </form>
             </div>
         </div>
@@ -98,6 +110,7 @@
     <!-- 3 -->
     <footer class="container bg-primary">
         <div class="row">
+            <i class="fa fa-bath" aria-hidden="true"></i>
             Footer content
         </div>
 
@@ -106,4 +119,5 @@
         </div>
     </footer>
 </body>
+
 </html>
