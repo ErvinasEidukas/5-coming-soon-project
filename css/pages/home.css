@@ -25,7 +25,11 @@
     background-attachment: fixed;
 }
 
-.hero > .row-short {
+/* .hero > .row-short {
+    text-align: center;
+} */
+
+.row-short {
     text-align: center;
 }
 
@@ -119,7 +123,10 @@ main .form > button {
 /* MAIN CONTENT: end  */
 
 /* FOOTER: start */
+
 footer.container {
+    font-size: 17px;
+    color: #fff8;
     padding-top: 0;
 }
 
@@ -153,4 +160,40 @@ footer .logo {
     object-position: top;
 }
 
+footer .trio > p {
+    padding: 0 10px;
+    display: inline-block;
+    position: relative;
+}
+
+footer .trio > p::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 70%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+footer .trio > p:first-child:before {
+    display: none;
+}
+
+footer .link {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    footer .trio > p {
+        width: 100%;
+    }
+
+    footer .trio > p::before {
+        display: none;
+    }
+}
 /* FOOTER: end */
