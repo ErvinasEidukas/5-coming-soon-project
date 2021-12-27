@@ -1,31 +1,49 @@
-.progres-bar{
+.progres-bar {
     display: inline-block;
     width: 100%;
 }
 
-.progres-bar> .top{
+.progres-bar > .top {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.progres-bar> .top > .title{
+.progres-bar > .top > .title {
     float: left;
 }
 
-.progres-bar> .top > .value{
+.progres-bar > .top > .value {
     float: right;
 }
 
-.progres-bar > .bottom{
+.progres-bar > .bottom {
     display: inline-block;
     width: 100%;
     height: 5px;
     background-color: grey;
 }
 
-.progres-bar > .bottom > .bar{
-    /* width: 80%; */
+.progres-bar > .bottom > .bar {
+    width: 90%;
+    height: 100%;
+    /* background-color: var(--primary-color); */
+}
+
+.progres-bar .bar > .loading {
+    width: 0%;
     height: 100%;
     background-color: var(--primary-color);
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
 }

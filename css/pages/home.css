@@ -71,6 +71,7 @@
 }
 
 .hero .mouse {
+    margin-top: 50px;
 }
 
 /* HERO: end */
@@ -134,6 +135,7 @@ footer.container {
     padding: 15px 0;
     text-align: center;
     border-bottom: 2px solid white;
+    position: relative;
 }
 
 .socials > .fa {
@@ -197,3 +199,15 @@ footer .link {
     }
 }
 /* FOOTER: end */
+
+.back-to-top {
+    position: absolute;
+    top: -0.8em;
+    right: -0.4em;
+}
+
+@media (max-width: 700px) {
+    .back-to-top {
+        display: none;
+    }
+}
